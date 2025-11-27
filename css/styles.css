@@ -1,0 +1,24 @@
+.eye {
+    float: right;
+}
+.text1 {
+    float: left;
+    width: 500px;
+}
+.clear {
+    clear: both;
+}
+.divider {
+    display: inline-block;
+}
+.divider::before {
+    content: "GEOLAB";
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+.divider::after {
+    content: "NIKA";
+    display: inline-block;
+    margin-left: 10px;
+}
