@@ -1,15 +1,45 @@
-.eye {
-    float: right;
-}
-.text1 {
-    float: left;
-    width: 500px;
-}
-.clear {
+.box::after {
+    content: "";
+    display: block;
     clear: both;
 }
+
+.left-wrapper {
+    float: left;
+    background-color: rgb(3, 219, 50);
+    width: 600px;
+}
+.right-wrapper {
+    float: right;
+    background-color: rgb(235, 115, 3);
+    width: 600px;
+}
+
+.mountain {
+    float: right;
+    width: 279px;
+}
+.eye {
+    float: left;
+}
+.p1 {
+    width: 300px;
+    float: left;
+}
+.p2 {
+    width: 300px;
+    float: right;
+}
+
+
+
+
+
+
+
 .divider {
-    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
 }
 .divider::before {
     content: "GEOLAB";
@@ -18,7 +48,11 @@
     
 }
 .divider::after {
-    content: "NIKA";
-    display: inline-block;
-    margin-left: 10px;
+    content: "";
+    background-color: aqua;
+    width: 50px;
+    height: 3px;
+    display: block;
+    margin: 20px auto;
+    display: block;
 }
